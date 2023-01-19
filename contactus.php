@@ -60,36 +60,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me!!</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contactus.css">
 </head>
 <body>
-    <h2>We would like to hear from you </h2>
-    <br>
-    <form action="" method = "post" id="feedback">
-        <table>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text" name="fname"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" name="lname"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="text" name="email"></td>
-                <td><input type="hidden" value= <?php echo $email;?>></td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td><input type="text" name="phone"></td>
-            </tr>
-            <tr>
-                <td>Message</td>
+    <div class="container">
+
+        <h2>We would like to hear from you </h2>
+        <br>
+        <form action="" method = "post" id="feedback">
+            <div class="user-input">
+                <div class="user-info">
+                    <label for="fname">First Name</label>  
+                    <input type="text" name="fname" id="fname"> 
+        
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname"> 
+                    
+                    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email"> 
+                    <!-- <input type="hidden" value= <?php echo $email;?>>  -->
+                    
+                    
+                    <label for="phone">Phone</label> 
+                    <input type="text" name="phone" id="phone"> 
+                </div>
+    
                 
-            </tr>
-            <input type="submit" value="  submit  ">
-        </table>
-    </form>
-    <textarea rows="4" cols="50" name="user_message" form="feedback"></textarea><br>
+                <div class="user-message">
+                    <label for="user_message">Message</label> 
+                    <input type="text" name="user_message" id="user_message" class="user_message-input">
+                    <input type="submit" value="  submit  " class="submit">
+                </div>
+            </div>
+            
+             
+        </form>
+        
+    </div>
 </body>
 </html>

@@ -1,0 +1,29 @@
+.user-input {
+    width: 740px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    padding: 30px;
+}
+
+.user-info {
+    flex:1;
+}
+.user-info input
+{
+    display: block;
+    margin-bottom: 8px;
+}
+.user-message {
+    flex: 1;
+}
+.user-message input{
+    display: block;
+    width: 230px;
+    height: 120px;
+}
+.user-message .submit {
+    margin: 15px;
+    width: 100px;
+    height: auto;
+}
