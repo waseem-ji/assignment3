@@ -87,8 +87,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </header>
 
     </div>
-    <div class="container card">
-        <div class="inner-card-1">
+    <div class="container ">
+        <div class="card">
+            <div class="inner-card-1">
             <!-- <h3> Education</h3> -->
         <?php
         echo "<hr/> <h3>Education </h3>";
@@ -110,6 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ?>
             <hr>    
         </div>
+        </div>
+        
 
     </div>
 

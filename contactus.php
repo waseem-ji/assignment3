@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         fputcsv($file,$lineData,$delimiter);
 
         fseek($file,0);
-        header("location: /assignment4/success.php");
+        header("location: /success.php");
 
     } while(false);
 }
@@ -97,6 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
              
         </form>
+        <p><a href="/">Go back to main page</a></p>
         
     </div>
 </body>
